@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cake2.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">Chocolate Cake Recipe</p>
+
+  <ion-slides [options]='slidecake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the cake:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 cups (250 grams) all-purpose flour (spooned & leveled)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3/4 cup (65 grams) natural unsweetened cocoa powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and ½ teaspoons baking soda</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and ½ teaspoons baking powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 teaspoon salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (200 grams) granulated sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (200 grams) brown sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup (120 ml) canola or vegetable oil</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (240 ml) buttermilk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 large eggs</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 teaspoons pure vanilla extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (240 ml) boiling water</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 teaspoon instant espresso powder optional, but recommended</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the frosting:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (200 grams) granulated sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (240 ml) evaporated milk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 large egg yolks room temperature and lightly beaten</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ cup (115 grams) unsalted butter</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 teaspoon pure vanilla extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and ½ cups (120 grams) sweetened shredded coconut</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (115 grams) chopped pecans</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the cake:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 350°F (177°C). Spray two 9-inch cake pans with nonstick cooking spray, line the bottom of each pan with parchment paper, and set aside.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. In a large mixing bowl, sift together the flour, cocoa powder, baking powder, baking soda, and salt. Whisk in the granulated sugar and brown sugar, then add the oil, buttermilk, eggs, and vanilla extract and mix until just combined.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Add the instant espresso powder to the cup of boiling water and mix until fully dissolved. Add to the mixing bowl and mix until just combined (the batter will be very thin)</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Evenly distribute the batter between both cake pans. Bake at 350°F (177°C) for 28-30 minutes or until a toothpick inserted into the center of the cakes comes out clean and the tops spring back when lightly touched.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Remove from the oven and transfer to a wire rack to cool in the pans for 30 minutes. Run a knife around the outside of each cake layer in the pan then carefully remove the cakes from the pans and place on the wire rack to cool completely.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the frosting:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Add the granulated sugar, evaporated milk, and egg yolks to a large saucepan and whisk until fully combined. Slice the butter into small pieces and add to the saucepan.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Place over medium heat, stirring constantly until the butter completely melts (about 4-5 minutes). Continue cooking and stirring constantly for another 8-12 minutes or until the mixture starts to boil and thicken.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Remove from the heat and stir in the sweetened shredded coconut and chopped pecans, then stir in the vanilla extract.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Transfer to a heat-safe container and allow to cool completely (about 1 - 1.5 hours).</p>
+  
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To assemble the cake: </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Once the cakes have cooled, level the tops of each cake. Place one cake layer on a cake stand or large serving plate and top with half of the frosting. Spread the frosting into one even layer on top of the cake layer.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Place the second cake layer on top of the frosting, add the remaining frosting on top, and spread around into one even layer.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Slice and enjoy or refrigerate until you’re ready to serve the cake.</p>
+</ion-content>

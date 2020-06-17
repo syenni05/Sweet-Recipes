@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/pudding1.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">Easy Banana Pudding Recipe</p>
+
+  <ion-slides [options]='slidepudding'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 bananas (plus 1 banana for topping, if desired)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon lemon juice</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 (5.1-ounce) package instant vanilla pudding (6-serving size)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 and 1/2 cups cold milk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 (14-ounce) can sweetened condensed milk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 (12-ounce) container whipped topping</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 30 vanilla wafer cookies (or more, for serving)</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Peel and slice three bananas and toss them in a bowl with 1 tablespoon of lemon juice. The lemon juice will keep them from turning brown. Set aside.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Combine the cold milk and instant vanilla pudding mix; whisk or beat with an electric mixer for 2 minutes. Add the sweetened condensed milk and mix until thoroughly blended. Let stand for 2 minutes. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. With a spatula or spoon, fold half of the whipped topping into the pudding mixture.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. In a glass serving bowl or individual dessert dishes, alternate layers of pudding, banana slices, and vanilla wafers. Spoon or pipe the remaining whipped topping over the pudding. Chill the pudding for at least 30 minutes before serving.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Garnish the dessert with banana slices just before serving. For an extra special look, sprinkle the dessert with vanilla sugar or a cinnamon sugar blend.</p>
+</ion-content>

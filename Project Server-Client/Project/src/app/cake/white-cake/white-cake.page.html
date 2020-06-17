@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cake1.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">White Cake Recipe</p>
+
+  <ion-slides [options]='slidecake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the white cake:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 and 3/4 cups (305 grams) cake flour (spooned & leveled)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon baking powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3/4 teaspoon salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (240 ml) buttermilk (room temperature)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 teaspoons clear vanilla extract or (pure vanilla extract)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup (230 grams) unsalted butter (softened to room temperature)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 3/4 cup (350 grams) granulated sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 5 large egg whites (room temperature)</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the vanilla buttercream frosting:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 cups (340 grams) unsalted butter (softened to room temperature)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 4 and 1/2 cups (540 grams) powdered sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tablespoons (45 ml) heavy whipping cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon clear vanilla extract or (pure vanilla extract)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/8 teaspoon salt</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the white cake:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 350°F. Spray two 9-inch cake pans with nonstick cooking spray, line the bottom of the pans with parchment paper and set aside. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. In a large mixing bowl, whisk together the cake flour, baking powder, and salt. Set aside.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Combine the buttermilk and vanilla extract in a measuring cup and stir until well combined. Set aside.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. In the bowl of a stand mixer fitted with the paddle attachment, or in a large mixing bowl using an electric mixer, cream together the butter and sugar for about 4-5 minutes or until light and fluffy. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Add the dry ingredients to the creamed butter and sugar in three additions alternating with the buttermilk mixture (begin and end with the dry ingredients) on low speed. Mix in each addition until just combined, making sure not to over mix the batter.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. In a separate clean mixing bowl, beat the egg whites to stiff peaks. Gently fold half of the egg whites into the batter, then fold in the remaining egg whites until just combined.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Pour the cake batter into the prepared cake pans and spread around into one even layer. Gently tap the cake pans on the counter a couple times to release any air bubbles.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. Bake at 350°F for 28-32 minutes or until a toothpick inserted into the center of the cakes comes out clean. Remove from the oven and allow to cool in the pan for about 20 minutes, then remove the cakes from the pans and transfer to a wire rack to cool completely. </p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the vanilla buttercream frosting:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. In the bowl of a stand mixer fitted with the paddle attachment, or in a large mixing bowl using an electric mixer, beat the butter on medium speed until smooth. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Add the powdered sugar one cup at a time, making sure to mix well after each addition, stopping to scrape down the sides of the bowl as needed. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Add the heavy whipping cream, vanilla extract, and salt and mix on medium speed until fully combined, making sure to scrape down the sides of the bowl. </p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To assemble the cake: </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Level the tops of each cake with a knife or cake leveler. Place one of the cakes on a cake stand, top with a layer of frosting, and smooth it out into one even layer. Place the second layer on top, then use the remaining frosting to frost the top and sides of the cake. </p>
+</ion-content>

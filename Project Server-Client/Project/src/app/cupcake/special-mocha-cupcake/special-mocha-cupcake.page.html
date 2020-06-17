@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cupcake7.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Special Mocha Cupcakes Recipe</p>
+
+  <ion-slides [options]='slidecupcake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the mocha cupcakes:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup cold brewed coffee</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup canola oil</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 large eggs, room temperature</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 teaspoons cider vinegar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 teaspoons vanilla extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1-1/2 cups all-purpose flour</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/3 cup baking cocoa</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 teaspoon baking soda</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 teaspoon salt</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the mocha frosting:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tablespoons milk chocolate chips</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tablespoons semisweet chocolate chips</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/3 cup butter, softened</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 cups confectioners' sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 to 2 tablespoons brewed coffee</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup chocolate sprinkles</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 350°. In a large bowl, beat sugar, coffee, oil, eggs, vinegar and vanilla until well blended. In a small bowl, combine flour, cocoa, baking soda and salt; gradually beat into coffee mixture until blended.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Fill paper-lined muffin cups three-fourths full. Bake 20-25 minutes or until a toothpick inserted in center comes out clean. Cool 10 minutes before removing from pan to a wire rack to cool.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. For frosting, in a microwave, melt chips and butter; stir until smooth. Transfer to a large bowl. Gradually beat in confectioners' sugar and enough coffee to reach desired consistency. Pipe frosting onto cupcakes. Top with sprinkles; gently press down.</p>
+</ion-content>

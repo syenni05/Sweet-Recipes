@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cake6.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">Starwberry Cake Roll Recipe</p>
+
+  <ion-slides [options]='slidecake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the paste:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 large egg white (30g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 tablespoons (16g) powdered sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup (50g) cake flour</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon (15g) vegetable oil</p>
+  <p style="padding-left: 20px; font-size: 70%;">- food coloring</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the cake:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 large eggs, separated</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup plus 2 tablespoons (75g) granulated sugar, divided</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon vegetable oil</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 tablespoons (23g) whole milk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 teaspoon almond extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 teaspoon kosher salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2/3 cup (67g) cake flour, sifted</p>
+  <p style="padding-left: 20px; font-size: 70%;">- food coloring</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the filling:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/4 cup (288g) heavy whipping cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 teaspoon unflavored powdered gelatin</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tablespoons (38g) granulated sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon (8g) powdered sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 ounce (14g) freeze-dried strawberries</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 350 degrees F. Line the bottom of a 15 by 10-inch jelly roll pan with parchment paper (if using a design template, place the printed template underneath the parchment paper, or trace it onto the back side of the parchment with thick pencil lines).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. To make design paste, combine egg white, powdered sugar, cake flour and vegetable oil in a bowl, stirring until completely smooth and no lumps remain.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Divide paste into 3 bowls (how you divide it proportionally will depend on your design) and add food coloring as desired. (I mixed 20g paste with 1 drop leaf green; 60g paste with 1 drop deep pink and 1/2 drop red; and 40g paste mixed with 1 teaspoon of the pink paste to produce a lighter shade of pink for the dots).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Transfer pastes into piping bags or plastic squeeze bottles fitted with small round piping tips (I used my smallest #1 tip for the green, a #3 tip for the light pink dots, and a larger #5 tip for the berries).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Pipe design onto parchment. Start with the green, then pipe the darker pink berries on top, and finish with the lighter pink dots. Place pan in freezer to allow the design to set while you prepare the rest of the batter.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Place egg yolks in a mixing bowl. Add 1/4 cup sugar and whisk until sugar is dissolved and yolks are lightened in color. Drizzle in vegetable oil, whisking constantly, until incorporated. Whisk in milk, almond extract and salt. Add food coloring as desired (I mixed a bit of Deep Pink and Red with a toothpick, then added just a toothpick’s worth to the batter.)</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Sprinkle sifted cake flour over batter and fold until incorporated.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. In a clean mixing bowl or the bowl of a stand mixer fitted with the whisk attachment, beat egg whites until frothy. Add remaining 2 tablespoons of sugar and beat on high speed until whites hold medium peaks.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">9. Fold a third of egg whites into batter to lighten it, then add the remaining egg whites and fold until just incorporated.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">10. Pour batter over top of frozen design, spreading the batter into an even layer using a large offset spatula. Bang the pan a few times on the countertop to remove any air bubbles and level out the top.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">11. Bake for about 10 minutes or until top is springy and edges are just barely starting to brown.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">12. Remove from oven. Carefully invert warm cake onto a piece of parchment backed by a solid surface like a large cutting board. Peel off parchment paper backing, revealing the design. Liberally dust a clean tea towel with powdered sugar and lay on top of cake. Flip cake over so the design is facing down.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">13. Starting with the side of the cake without the design, carefully roll up the warm cake in the towel. Doing this while the cake is still warm will give the cake a ‘muscle memory’ and allow you to roll it up later with the filling without it cracking.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">14. Let rolled cake cool for about 1 hour or until completely cool to the touch.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">15. Meanwhile, to make filling, in a small bowl, sprinkle gelatin over 1 tablespoon cool water and let soften for 5 minutes. Microwave the mixture in short, 5 second increments until the gelatin is completely dissolved and liquefied. Let cool slightly (but don’t let it firm up, if it does, microwave it again).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">16. In a food processor or clean coffee/spice grinder, pulse freeze dried strawberries together with sugar until very finely ground.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">17. Place whipping cream in the bowl of a stand mixer fitted with the whisk attachment. Beat on medium speed until frothy, then increase to medium high and beat until the paddle starts to leave trails in the cream.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">18. Mix a spoonful of the partially-whipped cream into the bowl with the melted gelatin until completely incorporated, then, with the mixer running on low, add this back to the bowl with the rest of the cream. Add strawberry sugar mixture, and increase speed to medium high, beating until cream holds medium-stiff peaks (take care not to overbeat).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">19. Carefully unroll cake and remove towel. You may need to hold it with your hand as it will try to roll back up (see, muscle memory!) Spread filling into a thin even layer over the whole cake, leaving about 1/2 inch bare at the far end. You may not need all of the filling, depending on how thick a layer you want.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">20. Gently roll up the cake, taking care not to use too much pressure lest the filling squeeze out the sides. Wrap tightly in plastic wrap and refrigerate for at least 2 hours or overnight, until filling is set. If you happen to have a cardboard tube lying around, place your cake roll in the tube to keep the bottom from flattening out as it chills (I used a tube for a whiskey bottle and it was the perfect size).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">21. To serve, cut into slices with a sharp serrated knife (the design bits are harder than the cake itself. The slices will look best if you cut using a sharp serrated knife, pulling the knife gently towards you, letting the weight of the knife do the cutting; it may take a few strokes to get through the firmer design parts. Try not to saw back and forth or press down or the design will compress into the cake).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">22. Cake roll will keep, tightly wrapped and refrigerated, for up to 3 days.</p>
+</ion-content>

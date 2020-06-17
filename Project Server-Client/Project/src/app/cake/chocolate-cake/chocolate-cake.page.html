@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cake4.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">Chocolate Cake Recipe</p>
+
+  <ion-slides [options]='slidecake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the cake:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup sour cream (120mL)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup buttermilk (236mL)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 large eggs</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 cup strong hot coffee (355mL) (Use a Moka pot so it's basically espresso)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3/4 cup vegetable oil (177mL)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbs vanilla extract (13mL)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 cup all-purpose flour (360g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 and 2/3 cup granulated sugar (533g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup cocoa powder (50g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 tsp baking powder (4.8g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbs baking soda (14.3g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tsp kosher salt (5.7g)</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the chocolate buttercream:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 lb confectioner's sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 cup unsalted butter (338g) room temperature</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup heavy whipping cream (60mL)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup Cocoa powder (25g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tsp vanilla (5mL) optional</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tsp espresso (5ml) optional</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 tsp salt (1.5g)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup semi-sweet chocolate (45g)</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the decoration:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup cacao nibs (about 60 grams)</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the cake:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Butter and flour 3 eight inch cake pans. I highly recommend using cake strips for a more even bake.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Sift together the dry ingredients (including the sugar) into the bowl of a stand mixer and whisk to combine.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Add the wet ingredients into a large bowl and whisk together.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Add the wet ingredients the dry ingredients. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Whisk to combine then mix on level 2 for two minutes.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Distribute batter evenly to the three pans and bake for about 35-40 minutes at 350F (176C) or until a toothpick inserted in the center comes out clean. I recommend rotating the pans halfway through the bake.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Allow time to cool for 10 minutes then invert onto wire racks to cool fully.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the chocolate buttercream:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. In a small bowl combine the semi-sweet chocolate with 2 tbs of cream then microwave for 40 secs on half power. Stir to combine then set aside. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Whip the butter for about 5 minutes using a paddle attachment (in a stand-up mixer).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Beat in the confectioner’s sugar slowly.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Add the cream.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Slowly mix in the ¼ cup of cocoa powder. Add the salt, as well. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. You may add the optional vanilla and espresso at this step. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Mix until you have a fluffy, even consistency.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. Beat in the melted and cooled chocolate ganache. </p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To assemble the cake: </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Pipe chocolate buttercream between each layer.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Pipe the buttercream on the outside of the cake. Smooth with a bench scraper and offset spatula.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Add a smooth coat of chocolate buttercream to the surface of the cake. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Use an 869 tip to pipe dollops on top.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Press cocoa nibs to the bottom of the cake (or the entire side, if desired).</p>
+</ion-content>

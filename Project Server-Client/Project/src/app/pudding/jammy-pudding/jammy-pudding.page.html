@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/pudding4.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Jammy Pudding Recipe</p>
+
+  <ion-slides [options]='slidepudding'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 cups IXL Strawberry Jam</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 60g butter, softened</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup caster sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 teaspoon vanilla essence</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 eggs</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup self-raising flour</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup almond meal</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon milk</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Pre-heat oven to 170°C. Lightly grease 6 x 1/2 cup capacity ovenproof dishes. Spread 1 heaped tablespoon of jam over the base of each dish.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Using an electric mixer, beat butter, sugar and vanilla until pale and creamy. Add eggs, one at a time, beating until well combined.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Sift the flour and almond meal together. Add half the flour mixture to the egg mixture. Mix well. Add remaining flour mixture and milk and stir gently to combine.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Divide the batter into dishes, spooning the batter over the jam in the base. Smooth surface.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Bake for 15 minutes or until a skewer inserted into centre of batter come out clean. Carefully turn puddings onto individual plates. Serve with custard.</p>
+</ion-content>

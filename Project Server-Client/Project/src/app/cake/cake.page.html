@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title
+      style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold;font-size: 120%;">
+      Cake</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item class="item-thumbnail-left" style="font-weight: bold;" [routerLink]="['/cake/black-forest-cake']">
+      <ion-card class="card1">
+        <img src="assets/cake7.jpg">
+      </ion-card>
+      Black Forest Cake Recipe
+    </ion-item>
+    <ion-item class="item-thumbnail-left" style="font-weight: bold;" [routerLink]="['/cake/chocolate-cake']">
+      <ion-card class="card1">
+        <img src="assets/cake4.jpg">
+      </ion-card>
+      Chocolate Cake Recipe
+    </ion-item>
+    <ion-item class="item-thumbnail-left" style="font-weight: bold;" [routerLink]="['/cake/german-chocolate-cake']">
+      <ion-card class="card1">
+        <img src="assets/cake2.jpg">
+      </ion-card>
+      German Chocolate Cake Recipe
+    </ion-item>
+    <ion-item class="item-thumbnail-left" style="font-weight: bold;" [routerLink]="['/cake/mocha-cake']">
+      <ion-card class="card1">
+        <img src="assets/cake3.jpg">
+      </ion-card>
+      Mocha Cake Recipe
+    </ion-item>
+    <ion-item class="item-thumbnail-left" style="font-weight: bold;" [routerLink]="['/cake/oreo-cheesecake']">
+      <ion-card class="card1">
+        <img src="assets/cake5.jpg">
+      </ion-card>
+      New York-Style Oreo Cheesecake Recipe
+    </ion-item>
+    <ion-item class="item-thumbnail-left" style="font-weight: bold;" [routerLink]="['/cake/strawberry-cake-roll']">
+      <ion-card class="card1">
+        <img src="assets/cake6.jpg">
+      </ion-card>
+      Strawberry Cake Roll Recipe
+    </ion-item>
+    <ion-item class="item-thumbnail-left" style="font-weight: bold;" [routerLink]="['/cake/white-cake']">
+      <ion-card class="card1" >
+        <img src="assets/cake1.jpg">
+      </ion-card>
+      White Cake Recipe
+    </ion-item>
+  </ion-list>
+</ion-content>

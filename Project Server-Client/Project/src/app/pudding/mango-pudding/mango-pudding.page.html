@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/pudding2.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">The Mango Pudding Recipe</p>
+  <p style="padding-left: 20px; padding-right: 20px;">This recipe is the Chinese style mango pudding popular in Dim Sum store.</p>
+
+  <ion-slides [options]='slidepudding'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">For the puree mixture:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 150 g mango puree</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 60 ml cold water</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 20 ml Heavy cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 40 ml milk</p>
+  
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">For the gelatin mixture:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 8 g gelatin, (2% of the total weight)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 60 g sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 80 ml water</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">For garnish:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- Mango cubes</p>
+  <p style="padding-left: 20px; font-size: 70%;">- Coconut milk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- Fresh mint leaves</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Cut the mango into the half. Use a knife to cut criss-cross on the flesh to make some dices.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Keep it for the subsequent step.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Remove the remaining flesh from the skin and the pit.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Place the mango flesh in the blender. Add the water as in the recipe. Blend the mango until it becomes a smooth puree.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Pour the pureed mango through a wire mesh strainer. Use the back of a metal spoon to press and stir lightly so that the puree will pass through the strainer.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Add the cream and milk to the puree.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Put cold water in a small pan.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. Dissolve the gelatin in the cold water.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">9. Let it sits for five minutes to allow it to bloom.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">10. Now add the sugar into the Bloomed gelatin. Heat it slowly until the sugar dissolved. Remove from heat.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">11. Pour the gelatin mixture slowly into the mango puree mixture.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">12. Pour it through the strainer for the second time.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">13. Place some mango cubes in the cup.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">14. Fill up the molds with the mixture.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">15. Use the tip of a folded kitchen tissue to break the bubbles.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">16. Cover with cling film and chill for at least two hours or until the pudding is set.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">17. Add a teaspoon of milk (or coconut milk) on the pudding.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">18. Decorate with more mango cubes and mint leaves.</p>
+</ion-content>

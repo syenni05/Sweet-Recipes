@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cupcake4.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Small Batch Chocolate Buttercream Cupcakes Recipe</p>
+
+  <ion-slides [options]='slidecupcake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the cupcakes:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup boiling water</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tablespoons unsweetened cocoa</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 6 tablespoons all-purpose flour</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3/4 teaspoon baking powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/8 teaspoon salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 6 tablespoons sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 Half Stick (1/4 cup) Land O Lakes® Butter, softened</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 large Land O Lakes® Egg</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 teaspoon vanilla extract</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the buttercream:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 Half Stick (1/4 cup) Land O Lakes® Butter, softened</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup powdered sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 teaspoon unsweetened cocoa</p>
+  <p style="padding-left: 20px; font-size: 70%;">- Dash salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 ounce bittersweet chocolate, melted</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 tablespoons Land O Lakes® Heavy Whipping Cream</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Heat oven to 375°F. Place paper baking cups into muffin pan cups or grease cups; set aside.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Place boiling water and 3 tablespoons cocoa into bowl; mix well. Let stand until slightly cooled.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Combine flour, baking powder, and salt in another bowl; set aside.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Place sugar and 1/4 cup butter into bowl; beat at medium speed until creamy. Add egg; beat until well mixed. Stir in vanilla. Add flour mixture; beat at low speed just until combined. Add cocoa mixture; beat until well mixed.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Spoon batter evenly into prepared muffin pan cups. Bake 18-22 minutes or until toothpick inserted into center comes out clean. Cool completely.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Beat 1/4 cup butter in bowl until creamy. Beat at low speed, gradually adding powdered sugar, 1/4 teaspoon unsweetened cocoa and salt. Add melted chocolate and heavy whipping cream; beat until mixed.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Frost or pipe buttercream onto cooled cupcakes.</p>
+</ion-content>

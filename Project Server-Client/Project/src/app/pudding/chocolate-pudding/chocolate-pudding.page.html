@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/pudding6.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Homemade Chocolate Pudding Recipe</p>
+
+  <ion-slides [options]='slidepudding'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup baking cocoa</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup cornstarch</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 teaspoon salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 4 cups whole milk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 tablespoons butter</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 teaspoons vanilla extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- OPTIONAL: Sweetened whipped cream and M&M's</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. In a heavy saucepan, combine sugar, cocoa, cornstarch and salt. gradually add milk. Bring to a boil over medium heat; boil and stir for 2 minutes. Remove from the heat; stir in butter and vanilla. Spoon into individual serving dishes. Chill until serving. If desired, garnish with whipped cream and M&M's.</p>
+</ion-content>

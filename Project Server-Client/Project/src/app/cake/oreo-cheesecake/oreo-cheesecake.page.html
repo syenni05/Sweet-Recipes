@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cake5.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">New York-Style Oreo Cheesecake Recipe</p>
+
+  <ion-slides [options]='slidecake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the oreo crust:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 24 Oreo cookies</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup (4 Tablespoons) unsalted butter, melted</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the New York-Style Oreo Cheesecake:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 (8 ounce) packages full-fat cream cheese, very soft</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup full-fat sour cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/4 cups granulated sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 large eggs plus 2 large egg yolks, at room temperature</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup heavy cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 16 Oreo cookies, roughly chopped, divided</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">Prepare the pan:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 325 degrees (F). Wrap a 9" spring form pan in multiple layers of heavy-duty tin foil.  Lightly grease the pan with non-stick spray and set aside until needed.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the oreo crust: </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Place the Oreo cookies in the body of a small food processor - or blender - and pulse until the cookies are fine crumbs. Pour the crumbs into a large mixing bowl and stir in the melted butter; mix well to combine. Scrape the mixture into the prepared pan and firmly press the crust down the center of the pan and slightly up the sides.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Bake in preheated oven for 12 minutes.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Remove from oven and set on a cooling rack until needed.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the New York-Style Oreo Cheesecake:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. In the body of a high power blender, food processor, stand mixer fitted with the whisk attachment, or in a large bowl using a hand held mixer, beat the softened cream cheese and sour cream until completely smooth, scraping down the sides and bottom of bowl as needed</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Add in the sugar and beat smooth. Add in the eggs and yolks, one at a time, beating well after each addition.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Pour in the cream and beat just until it's evenly incorporated in the batter. Turn the mixer off and, using a rubber spatula, fold 3/4 of the chopped Oreo cookies into the batter.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Pour filling into prepared crust and spread evenly. Sprinkle the top with remaining Oreo cookies.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Place the cheesecake pan into a large, deep pan. Fill the pan up with 2 inches of hot water. This is your water bath and will help ensure your cheesecake comes out crack free.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. CAREFULLY place the pan in the oven and bake cheesecake for 1 hour and 20 minutes. If the top begins to get too brown, place a piece of tinfoil on top of the pan.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Once the baking time is up, turn the oven off but allow the cheesecake sit, undisturbed, inside the oven with the door shut, for another 30 minutes. The cheesecake should be still slightly wiggly.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. Remove the cheesecake from the oven and place it on a cooling rack. Gently run a knife around the edge of the cake. Cool to room temperature, then cover the pan with aluminum foil and refrigerate for at least 6 hours before slicing.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">9. When ready to serve, top with a dollop of whipped cream and extra Oreo cookies. And enjoy!</p>
+</ion-content>

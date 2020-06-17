@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cake3.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">Mocha Cake Recipe</p>
+
+  <ion-slides [options]='slidecake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the cake:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 cup all-purpose flour</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 and ⅔ cups granulated sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tbsp cocoa powder nice quality</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tsp kosher salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbsp baking soda</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and ½ tsp baking powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ cup sour cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ cup buttermilk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 eggs large</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/4 cups coffee hot, strong</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ cup water</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ¾ cup veggie oil</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the buttercream:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 lb butter unsalted</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 lb confectioners sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbsp cocoa powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbsp espresso powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbsp vanilla</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tbsp heavy cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 tsp salt</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the ganache:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup dark chocolate chopped</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup heavy cream</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the assembly:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup chocolate covered espresso beans</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the batter:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 350F. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Butter and flour three 9-inch cake pans. I highly recommend using cake strips for a more even bake.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Sift together the dry ingredients (including the sugar) into the bowl of a stand mixer and whisk to combine.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Add the wet ingredients into a large bowl and whisk together.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Add the wet ingredients to the dry ingredients.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Whisk to combine then mix on level 2 for two minutes.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Distribute batter evenly to the three pans and bake for about 35-40 minutes at 350F or until a toothpick inserted in the center comes out clean. I recommend rotating the pans halfway through the bake.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. Allow time to cool for 5 minutes, then invert onto wire racks to cool fully.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the buttercream: </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Sift the confectioners’ sugar, salt, cocoa and espresso powder into a bowl.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Whip the butter for about 5 minutes using a paddle attachment (in a standing mixer).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Beat in the sugar mixture slowly.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Add vanilla and drizzle in the cream while beating until desired consistency is reached. If the you want the buttercream to have a stronger espresso taste, add as much as you would like! </p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the ganache:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Warm the cream and pour over the chocolate. Set aside for a few minutes and whisk together. If there’s a few bits of unmelted chocolate just microwave it for 10 seconds on half power and whisk again.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To assemble the cake: </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Pipe buttercream on the first layer, add a swirl of the ganache then a sprinkle of chopped espresso beans.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Add the second layer on and repeat the process.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Add third layer on and cover cake with buttercream. Smooth using an offset spatula.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Drizzle ganache on top of cake, smooth the top and allow to set.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Pipe dollops of buttercream on the edge using a large closed star tip.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Top each dollop with a chocolate covered espresso bean.</p>
+</ion-content>

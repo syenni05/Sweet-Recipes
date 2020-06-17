@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cupcake3.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Matcha Green Tea Cupcakes Recipe</p>
+
+  <ion-slides [options]='slidecupcake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the cupcakes:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 cups all purpose flour</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 teaspoon salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ teaspoon baking powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 teaspoon baking soda</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon matcha</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ cup butter</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 large egg</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ cup milk</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the frosting:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- ½ cup butter, softened</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 cups powdered sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 TBSP milk plus 1 TSP</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 teaspoon matcha</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the frosting:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- sprinkle matcha</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the cupcakes:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 350° and place paper baking cups into 24 regular-sized muffin cups.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. In a medium bowl, mix flour, baking powder, baking soda, matcha, and salt.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. In a large bowl, cream sugar, butter, and egg.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Next, alternate blending in dry mixture and milk.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Fill each muffin cup up about 2/3 full and bake for 20-25 minutes until an inserted toothpick comes out clean. Cool thoroughly before frosting.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the frosting:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. In a large bowl, cream together butter, sugar and matcha until well blended.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To add the topping:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Lightly sprinkle matcha on top of each cupcake.</p>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/cupcake1.jpg">
+</ion-card>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 150%;">Vanilla Cupcakes Recipe</p>
+
+  <ion-slides [options]='slidecupcake'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the vanilla cupcakes:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/4 cups flour</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 cup granulated sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup sour cream</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup (1/2 stick) butter, melted</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 eggs</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon McCormick® Pure Vanilla Extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 teaspoons baking powder</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 12 cupcake container</p>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 90%;">For the whipped vanilla buttercream frosting:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3/4 cup (1 1/2 sticks) butter, softened</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 teaspoons McCormick® Pure Vanilla Extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 cups confectioners' sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 4 to 5 teaspoons milk</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the vanilla cupcakes:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Preheat oven to 350°F. For the Vanilla Cupcakes, beat all ingredients in large bowl with mixer on low speed just to moisten. Beat on medium speed 2 minutes. Spoon into 12 paper-lined muffin cups. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Bake 15 to 17 minutes or until toothpick inserted into center of cupcake comes out with moist crumbs. Cool in pan 5 minutes. Remove from pan; cool completely on wire rack. </p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the whipped vanilla buttercream frosting:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. For the Whipped Vanilla Buttercream Frosting, beat butter and vanilla in large bowl until light and fluffy. Gradually add confectioners’ sugar, beating well after each addition. Beat in milk until light and fluffy. Frost cooled cupcakes with Frosting. </p>
+</ion-content>

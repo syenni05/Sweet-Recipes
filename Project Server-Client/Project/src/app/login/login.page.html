@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title
+      style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold;font-size: 120%;">
+      LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col><br />
+        <img src="/assets/fix.png" alt="" /><br /><br />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" position="floating">Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary" position="floating">Password</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <p class="ion-text-right">Forgot Password?</p>
+  <ion-button type="submit" expand="block" color="primary" [routerLink]="['/home']" (click)="login(item)">Login</ion-button>
+
+  <p class="ion-text-center">Don't have a account?</p>
+  <ion-button expand="block" color="danger" [routerLink]="['/register']">Register</ion-button>
+</ion-content>

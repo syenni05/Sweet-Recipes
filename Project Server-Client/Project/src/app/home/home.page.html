@@ -1,0 +1,113 @@
+<ion-header>
+  <div style="padding-top: 10px;"></div>
+  <ion-toolbar>
+    <ion-title
+      style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; text-align: left; font-size: 170%; padding-left: 20px;">
+      Sweet Recipes
+    </ion-title>
+    <ion-buttons slot="primary">
+        <ion-icon slot="icon-only" name="person" color="dark" [routerLink]="['/login']"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-card-subtitle style="text-transform: inherit ; text-align: left; padding-left: 20px;">
+    Tasty foods at home!
+  </ion-card-subtitle>
+  <div style="padding-bottom: 20px;"></div>
+</ion-header>
+
+<ion-content>
+  <ion-slides [options]='slidebaru' style="background-color: #ffdab98e;">
+    <ion-slide>
+      <ion-row>
+        <ion-card class="slide">
+          <ion-tab-button tab="cake" [routerLink]="['/cake']">
+            <ion-icon src="/assets/icon/cake.svg"></ion-icon>
+            <ion-label>Cake</ion-label>
+          </ion-tab-button>
+        </ion-card>
+      </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row>
+        <ion-card class="slide">
+          <ion-tab-button tab="cupcake" [routerLink]="['/cupcake']">
+            <ion-icon src="/assets/icon/cupcake.svg"></ion-icon>
+            <ion-label>Cupcake</ion-label>
+          </ion-tab-button>
+        </ion-card>
+      </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row>
+        <ion-card class="slide">
+          <ion-tab-button tab="pudding" [routerLink]="['/pudding']">
+            <ion-icon src="/assets/icon/pudding.svg"></ion-icon>
+            <ion-label>Pudding</ion-label>
+          </ion-tab-button>
+        </ion-card>
+      </ion-row>
+    </ion-slide>
+  </ion-slides>
+  <div style="padding-bottom: 15px;"></div>
+
+  <ion-slides scrollbar="false" [options]="slidelagi">
+    <ion-slide>
+      <ion-card class="color1" [routerLink]="['/cake/white-cake']">
+        <img src="/assets/cake1.jpg" alt="" />
+        <ion-label style="text-align: left;">
+          <p style="padding-left: 20px; padding-top: 5px; color: black; font-size: 90%;">How to make <ion-icon
+              name="arrow-forward"></ion-icon>
+          </p>
+          <p style="padding-left: 20px; padding-top: 15px; color: black; font-weight: bold; font-size: 150%;">
+            White Cake</p>
+          <p style="padding-left: 20px; padding-bottom: 10px; color: black; font-weight: bold; font-size: 150%;">Recipe
+          </p>
+          <p style="padding-left: 20px; padding-bottom: 5px; font-size: 100%;">1 hour 15 min</p>
+        </ion-label>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="color2" [routerLink]="['/cupcake/vanilla-cupcake']">
+        <img src="/assets/cupcake1.jpg" alt="" />
+        <ion-label style="text-align: left;">
+          <p style="padding-left: 20px; padding-top: 5px; color: black; font-size: 90%;">How to make <ion-icon
+              name="arrow-forward"></ion-icon>
+          </p>
+          <p style="padding-left: 20px; padding-top: 15px; color: black; font-weight: bold; font-size: 150%;">
+            Vanilla Cupcakes</p>
+          <p style="padding-left: 20px; padding-bottom: 10px; color: black; font-weight: bold; font-size: 150%;">Recipe
+          </p>
+          <p style="padding-left: 20px; padding-bottom: 5px; font-size: 100%;">37 min</p>
+        </ion-label>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="color3" [routerLink]="['/pudding/easy-banana-pudding']">
+        <img src="/assets/pudding1.jpg" alt="" />
+        <ion-label style="text-align: left;">
+          <p style="padding-left: 20px; padding-top: 5px; color: black; font-size: 90%;">How to make <ion-icon
+              name="arrow-forward"></ion-icon>
+          </p>
+          <p style="padding-left: 20px; padding-top: 15px; color: black; font-weight: bold; font-size: 150%;">
+            Easy Banana</p>
+          <p style="padding-left: 20px; padding-bottom: 10px; color: black; font-weight: bold; font-size: 150%;">Pudding
+            Recipe
+          </p>
+          <p style="padding-left: 20px; padding-bottom: 5px; font-size: 100%;">45 min</p>
+        </ion-label>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>For More Information</ion-label>
+    </ion-list-header>
+    <ion-item [routerLink]="['/about-us']">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>About Us</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

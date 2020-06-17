@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/pudding3.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Strawberry Coconut Chia Pudding Parfaits Recipe</p>
+
+  <ion-slides [options]='slidepudding'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">For the strawberry chia jam:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 pound strawberries, fresh or frozen</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tablespoon honey, use more or less depending on the sweetness of the berries</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 2 teaspoons fresh lemon juice</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 tablespoons chia seeds</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 teaspoon vanilla extract</p>
+  
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">For the coconut chia pudding:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 6 ounces plain non-fat Greek yogurt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3/4 cup low fat milk or milk of choice (I used unsweetened almond milk)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 and 1/2 tablespoons honey</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 teaspoon coconut extract or vanilla extract</p>
+  <p style="padding-left: 20px; font-size: 70%;">- pinch of salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 tablespoons chia seeds</p>
+  <p style="padding-left: 20px; font-size: 70%;">- Unsweetened toasted coconut flakes for topping the parfaits (optional)</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the strawberry chia jam:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Place the strawberries in a small saucepan over medium heat. Cook the berries for about 5-7 minutes until they break down and become syrupy. Use a potato masher to mash the berries into your desired consistency.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Turn off the heat and stir in the honey, lemon juice, salt and vanilla. Stir in the chia seeds then let it stand for 5-10 minutes. Refrigerate and store in an airtight container or jar until chilled.</p>
+  
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To make the coconut chia pudding:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. In a large bowl whisk together the yogurt, milk, honey, coconut extract and pinch of salt until smooth. Add in the chia seeds and stir until evenly incorporated.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Cover the bowl with plastic wrap or a lid and refrigerate at least 4 hours or overnight until the pudding is thick.</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">To assembling the parfaits:</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Divide the pudding and jam into 4 glasses, bowls or jars. Top with unsweetened toasted coconut flakes if desired. Serve immediately or cover and store in the fridge to eat throughout the week (they should keep for approximately 4-5 days).</p>
+</ion-content>

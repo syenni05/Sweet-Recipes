@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/pudding7.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Basic Vanilla Pudding Recipe</p>
+
+  <ion-slides [options]='slidepudding'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 3 cups milk (divided)</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 cup cornstarch</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/2 cup sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1/4 teaspoon salt</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 1/2 teaspoons vanilla extract</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. Scald 2 and 2/3 cups of the milk.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. In a small bowl, mix together the cornstarch, sugar, and salt.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Stir in the remaining 1/3 cup milk.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Add to the scalded milk and cook over low heat, constantly stirring, until thickened and smooth.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Continue cooking for about 5 minutes to cook cornstarch thoroughly.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Cool slightly and then stir in vanilla.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Pour into serving dishes.</p>
+</ion-content>

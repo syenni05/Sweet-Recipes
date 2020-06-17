@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" color="dark"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+    <ion-buttons slot="primary">
+      <ion-icon style="font-size: 150%;" name="bookmark" (click)="save(item)"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <img src="/assets/pudding5.jpg">
+</ion-card>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 150%;">Microwave Custard Pudding Recipe</p>
+
+  <ion-slides [options]='slidepudding'>
+    <ion-slide *ngFor ="let item of content">
+      <ion-card class="content">
+        <img src = {{item.img}} class="image">
+        <p>{{item.content}} </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <p style="padding-left: 20px; font-weight: bold; font-size: 120%;">Ingredients</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">For the custard pudding:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 120 ml whole milk</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 large egg</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbsp granulated white sugar</p>
+  
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">For the custard pudding:</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tbsp granulated white sugar</p>
+  <p style="padding-left: 20px; font-size: 70%;">- 1 tsp water plus an additional 1 tsp water for version 2</p>
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 120%;">Instructions</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">Version 1 (Traditional method with syrup sitting at the bottom when custard cooks):</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. First, make the caramel sauce. Add 1 tbsp granulated sugar and 1 tsp water to your microwave safe bowl. Stir until sugar dissolves completely into the water. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Set your microwave cooking power to 500 watts. Microwave caramel sauce for 2 minutes. Stop microwave and then microwave at 10 second intervals (still at 500 watts), checking the sauce after each 10 seconds, until caramel starts to turn color. About half of the sauce should turn a light amber color while the rest remains clear. (It should take between 3 minutes to 3 1/2 minutes total cooking time including initial 2 minutes to reach this color).</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Working quickly, remove sauce from microwave and swirl a few times until the color evens out. Allow caramel to harden.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. While caramel is setting, make the custard. In a small bowl, add custard ingredients and whisk until smooth. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. Pour custard through a fine mesh strainer and into bowl. The custard should sit on top of the hardened caramel.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Set your microwave to 500 watts cooking power again. Microwave custard for about 2 minutes and 30 seconds. The top of the custard should be hardened and no longer liquid. If custard is not completely cooked, you can cook another 30 seconds.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Place custard into the fridge to set for at least 2 hours or until completely chilled. While custard is chilling, it will develop some water around it. This is normal. Do not drain the water out because it will mix with the caramel sauce so that there is enough sauce to cover the custard and plate.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. When ready to eat, place a plate over the bowl. Flip bowl upside down so that the custard falls onto the plate. The custard should slide out and the caramel sauce should pour over the cake. </p>
+
+
+  <p style="padding-left: 20px; padding-right: 20px; font-weight: bold; font-size: 90%;">Version 2 (Cooking custard separately from caramel sauce):</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">1. First, make the custard. In a small bowl, add custard ingredients and whisk until smooth.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">2. Pour custard through a fine mesh strainer and into microwave-safe pudding bowl.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">3. Set your microwave to 500 watts cooking power. Microwave custard for about 2 minutes and 30 seconds. The top of the custard should be hardened and no longer liquid. If custard is not completely cooked, you can cook another 30 seconds.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">4. Place custard into the fridge to set for at least 2 hours or until completely chilled. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">5. While custard is chilling, make the caramel sauce. Add 1 tbsp granulated sugar and 1 tsp water to a microwave safe bowl. Stir until sugar dissolves completely into the water.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">6. Set your microwave cooking power to 500 watts. Microwave caramel sauce for 2 minutes. Stop microwave and then microwave at 10 second intervals (still at 500 watts), checking the sauce after each 10 seconds, until caramel starts to turn color. About half of the sauce should turn a light amber color while the rest remains clear.</p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">7. Working quickly, remove bowl from microwave and add in 1 tsp of water while the caramel sauce is still very hot. Be careful because this will cause the sauce to bubble. While the sauce is bubbling, stir until all the liquid is even in color. Allow caramel sauce to cool and thicken. </p>
+  <p style="padding-left: 20px; padding-right: 20px; font-size: 70%;">8. When ready to eat, place a plate over the custard bowl. Flip bowl upside down so that the custard falls onto the plate. Pour syrup over custard before serving.</p>
+</ion-content>
